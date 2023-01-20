@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* colors */
+
+:root {
+  --imperial-red: #e63946ff;
+  --honeydew: #f1faeeff;
+  --powder-blue: #a8dadcff;
+  --celadon-blue: #457b9dff;
+  --prussian-blue: #1d3557ff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background-color: var(--honeydew);
+  }
+  .header-container {
+    width: 100%;
+    height: 80px;
+    margin-left: 40px;
+    background-color: var(--honeydew);
+    color: var(--prussian-blue);
+    margin-bottom: 0;
+
+    
+  }
+  .header-container h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 5rem;
+
+  }
+  .header-container h1:hover {
+    color: var(--imperial-red);
+    transition: all 300ms ease;
+    
+  }
+  .from-container {
+    width: 100%;
+    height: auto;
+    margin: 0 40px 20px 20px;
+  }
+
+  #note-input {
+    width: 80%;
+    padding: 15px 20px;
+    border: 2px solid #1d35579e;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: inherit;
+  }
+  
+  #add-button {
+    background-color: var(--prussian-blue);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  #add-button:hover {
+    background-color: var(--honeydew);
+    border: 2px solid var(--prussian-blue);
+    color: var(--prussian-blue);
+    scale: 1.05;
+    transition: all 300ms ease;
+  }
+
+  .taskList-container {
+     width: 80%;
+     height: auto;
+     border: 2px solid #1d35579e;
+     margin: 0 40px 20px 20px;
+     border-radius: 6px;
+  }
+  
+  #note-list {
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--celadon-blue);
+  }
+  
+  .note {
+    height: auto;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: powderblue;
+    list-style-type: none;
+    border-bottom: 2px solid var(--celadon-blue);
+
+    padding: 12px;
+  }
+  
+  .note.underline {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(26, 89, 114, 0.938);
+    color: #000;
+    background-color: rgba(122, 212, 134, 0.849);
+
+  }
+
+  
